@@ -1,0 +1,200 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'JS/css/admin_dashboard.css' %}">
+    
+    <title>Creators Console Panel</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <span class="logo_name">Editor Lab</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li ><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li   class="text-add-btn"><a>
+                    <i class="uil uil-text"></i>
+                    <span class="link-name">Add Text</span>
+                    <i class="uil uil-angle-down"></i>
+                </a>
+                 <div class="text-attribute-input">
+                </div>
+
+            </li>
+                <li class="custom-img-uploader" id="#fgdhh">
+
+                    <a >
+                        <input type="file" accept="images/*" class="custom-image-browse-type" hidden>
+                
+                        <i class="uil uil-image-plus"></i>  <span class="link-name">Add Image</span>
+                </a>
+            
+                </li>
+                
+                <li style="padding: 10px;">Edit Here : </li>
+                <li style="padding: 10px;"><span >Border Radius : </span>
+                    <input class="input-border-radius" style="max-width: 180px; border-radius: 10px;border: blue 2px solid;padding: 10px; margin-top: 10px;" type="number" placeholder="Image Border Radius...">
+                </li>
+                <li style="padding: 10px;"><span >Image Width : </span><input class="input-border-width" style="max-width: 180px; border-radius: 10px;border: blue 2px solid;padding: 10px; margin-top: 10px;" type="number" placeholder="Image Width..."></li>
+                <li style="padding: 10px;"><span >Image Height : </sp-------------------------------an><input class="input-border-height" style="max-width: 180px; border-radius: 10px;border: blue 2px solid;padding: 10px; margin-top: 10px;" type="number" placeholder="Image Height..."></li>
+                <!-- <a><li style="margin-top: 20px;padding: 10px; background-color:green; color: white; border-radius: 10px; text-align: center;">Generate cards</li>
+                </a> -->
+               </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+          </ul>
+        </div>
+    </nav>
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>            
+            <img src="images/profile.jpg" alt="">
+        </div>
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Canvas</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1-landscape">
+                        <i class="uil uil-file-landscape"></i>
+                        <span class="text">Landscape</span>
+                         </div>
+                    <div class="box box2 box2-portrait">
+                        <i class="uil uil-print"></i>
+                         <span class="text">Portrait</span>
+                        </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        
+        <!--This is the default div to hold the image and customize it-->
+            <!-- 
+        <div class="resize-exp">
+            <div class="custom-upload-image">
+
+        </div>
+
+        </div> -->
+        <!--this is the section where div will be injected based on template selection-->
+       
+       <!--Adding Here the text Editor pane -->
+
+       <div class="text-editor-pane">
+        <div>
+        <!--  <label for="font-family" style="display:inline-block">Font family:</label> -->
+            <select style="border: red 1px solid; border-radius: 8px; padding: 5px;" id="font-family-custom">
+              <option value="arial">Arial</option>
+              <option value="helvetica" selected>Helvetica</option>
+              <option value="myriad pro">Myriad Pro</option>
+              <option value="delicious">Delicious</option>
+              <option value="verdana">Verdana</option>
+              <option value="georgia">Georgia</option>
+              <option value="courier">Courier</option>
+              <option value="comic sans ms">Comic Sans MS</option>
+              <option value="impact">Impact</option>
+              <option value="monaco">Monaco</option>
+              <option value="optima">Optima</option>
+              <option value="hoefler text">Hoefler Text</option>
+              <option value="plaster">Plaster</option>
+              <option value="engagement">Engagement</option>
+            </select>
+        </div>
+        <span> Font -Color : 
+            <div class="color-picker">
+
+            </div> </span>
+           <div>
+            <label for="text-font-size">Font-size : </label>
+            <input class="font-size-cu" style="border: red 1px solid; border-radius: 8px; padding: 5px;" type="number" value="10" min="1" max="200" step="1" id="text-font-size">
+          </div>
+
+          <div>
+            <!--  <label for="font-family" style="display:inline-block">Font family:</label> -->
+                <select style="border: red 1px solid; border-radius: 8px; padding: 5px;"  id="font-Weight-cu">
+                  <option value="Bold">Bold</option>
+                  <option value="Normal" selected>Normal</option>
+                  <option value="Italic">Italic</option>
+                  <option value="Underline">Underline</option>
+                  <option value="Linethrough">Linethrough</option>
+                  <option value="Overline">Overline</option>
+                </select>
+            </div>
+       </div>
+       
+        <div class="text-adder">
+            <span>Add Your Design here</span>
+               <i class="uil uil-image-plus"></i>
+           </div>
+       <div class="abs-image-holder-cls"></div>    
+        <section class="template-sel">  
+                <!-- <div class="image-select"></div>
+          -->
+            </section>
+       
+       
+            <div class="template-sel-warntext">
+            <div class="btn-cls-grp">
+            <button  class="select-image-btn"> 
+                <input type="file" accept="images/*" class="image-browse-type" hidden>
+                <i class="uil uil-upload"></i>
+             Upload Sample</button>
+            <button class="final-copy-create"> Save and create</button>
+            <button class="resore-copy-create"> Restore previous Samples</button>
+            </div>
+           </div>
+           <div  hidden class="user-current-oo">{{client_id}}</div>    
+  
+           <span style="margin: 40 auto;"><span>* </span>This is the default template size, not standard , choose appropriate as per need </span> 
+            </div>
+    <div class="custom-image-area">
+        <!-- <img width="200px0" height="200px" id="pane" class="img-drag"  src="AAm.jpg"> -->
+         <!-- <div  id="ghostpane"></div> -->
+        </div>
+        
+   <canvas id="can"></canvas>
+</section>
+
+    <script src="{% static 'JS/fabric/admin_dashboard.js' %}"></script>
+    <script src="{% static 'JS/fabric/lib/unpkg.com_fabric@5.3.0_dist_fabric.min.js' %}"></script>
+</body>
+</html>

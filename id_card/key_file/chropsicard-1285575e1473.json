@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "chropsicard",
+  "private_key_id": "1285575e14739590238d2b5d85adf17d7978445c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdDfxn0slm6rim\n9iLNdzJDqqzfuL5uhPaCxIyQ+aJXtQzU3e7YL0qfqDHKl4BHU8gEtdZ0dYn9G0wV\nk36kRVpS1Y4KbAIB4owG47dnf0KLeMn/TbKuQYnc2L9msCHsW1jAZbRupShRge+5\nQVZQ7lPQ3ljAqoXFWM+OX0THXTf5iooLvGICwP2BKOSN68nVmCQtAGCJUgAsA4r+\nYVnXghCUpb8qtcmlx7uiMzRjCHrs4j5jmDHxGevesW3UmiVfGVA+yhE+XyF6iDhL\nMNvjzHeIDyf5RUYDK2Bsqf9e0hV82AsiMViHvld2gBcN95E5lmhepTuzErIrsWmG\n1vXVpOKzAgMBAAECggEATirAatw8MMLmec/Gvb4dDZWAXPogiMdGvjYPeMJ1eCtC\n9tDlwRdz/WIF/Vw2VcKYE6ZTR8o6ecCZ1nVaDm+hwXHXsPLBgPYhytviQlxbZSNY\n1okcmob9X5VblU3KKSCiESLFu2x2hd/7K5ihk6u7ArxlSPfjpsXBW1hv40mg3gHJ\neBRw+6IVE5Ukb5Jz3M0AlYzqwPDIBT8fWl1MzvVzmelqB1zQag6D22+NYrVUU/uW\n9v4kojKkigzMPpGRCYvfLbpZb4UQNxvchlYXG34k/JzYl+WRGF6Dx2es8VrJ3dT2\nE0D5UstOa+zZCYdm1RIkZw7K3jmIyN9RQG7CqQsBeQKBgQD2Vp2MckxZ9R8mBHBt\nzoKeuRVRb9Cl1tEYgCuiF+hh98YS+ktOu4tynhC5iguWb0eBtacrqFPYaGqt8Ccm\n7//c4wwR36MUQkXc0rdcrLe9VZkK9hWqNxGZhJs5ehzFGbxspvPRbX+WmSYCg0Pf\nCWz+QmqJ1tCVR78kDLeH+N6iiwKBgQDluYHHNVejn14DZNBXhfvRK9sEE6DKv5uM\nm3y6pTOYEttl8jP9VqAxHJ7bFTpu0Yx0TnyGg+c8QUxuCGh1spb7Yqmex6IiN62s\nfWlCTwWQ6bzexeiYbyzekyMlCaJzD6h27TU0CNK7SJbrgUTPwp+spyZDzXwGUVLK\nN06f9JsNeQKBgA+yVTet0M+qnuF9Ruy4S/pxMLqPtWvb1FcLU7xwaY5Ui3qKGGJb\n8PbMu6QW98YOMTBCsvRFNZKElMegld4VTOh2Tz6UUX/o+SqpAqYVG2AlJCteouLF\nv4lYuctfzJWCnk8OFFsz7v1ZpOJkGt8LaraI5OEDnybj+3oAlXFEmmshAoGBAIml\nEWGvUIe1obse2MbYfP3j7SMQL7PMAwPI1n9vJO7lvZfj+8q78Nf8ciKLIavs2t+F\nd4+R0SeFaKo1V4HONDED+OYub7NY8TL9IeidOJSPuJ8yrh9H3fau6svybefLZgF8\nN/ipoLqez+7kUbq6vrnQnVja8olGiPipEu88vPrhAoGBAPQAnBV/BSO4sYyVoLTh\nNPeNxKcAGPQVmHN9ywZQfDLJ3QssmxNxyq9hpsyHCbHkmwfTj6Xklx3VbwWG2b6T\n037It3FErt8bVglZ16AhclDp3WIfyDwLw1J4kh6QepWJaNE0GCrVzVIaP39H2fow\nAHV6OySTbP6aZTLtUqGtkLUO\n-----END PRIVATE KEY-----\n",
+  "client_email": "chropsicard@appspot.gserviceaccount.com",
+  "client_id": "103054143499140249989",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chropsicard%40appspot.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

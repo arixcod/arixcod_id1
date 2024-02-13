@@ -1,0 +1,28 @@
+{%extends 'id_card/creators_panel.html' %}
+{% block body%}
+
+
+<h3 style="margin-top: 100px;">You can find All clients data Here </h3>  
+<hr>    
+<div class="data-wrapper">   
+{% for data in all_data %}
+<div class="container">
+    <div class="item">
+      <div class="filename">
+        <p>{{data.full_name}}</p>
+        <div class="filedata">
+          <span> ● {{data.email}}</span>
+          <span> ● {{data.phone_No}}</span>
+          <span> ● {{data.adress}}</span>
+          <span> ● {{data.pk}}</span>
+        </div>
+        <button>
+          <a style="text-decoration: none;color: white;" href="{% url 'part_fire_user_data' data.pk %}">view data</a>
+        </button>
+    </div>
+    </div>
+  </div> 
+
+  {%endfor%}
+</div>
+{%endblock%}

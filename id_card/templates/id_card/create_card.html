@@ -1,0 +1,61 @@
+{%extends 'id_card/creators_panel.html' %}
+
+{% block body%}
+
+<div class="experiment ">
+    <div class="dash-content">
+        <div class="overview">
+            <div class="title">
+                <i class="uil uil-tachometer-fast-alt"></i>
+                <span class="text">Create Client</span>
+            </div>    
+<div class="fixed-width">
+<form  method="post">
+    {%csrf_token%}
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Full Name :</label>
+      <input type="text" class="form-control" name="Name" id="exampleInputName" aria-describedby="emailHelp">
+     </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address :</label>
+        <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Business Name :</label>
+        <input type="text" name="busname" class="form-control" id="examplebusName" aria-describedby="emailHelp">
+       </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Adress :</label>
+        <input type="text" name="adress" class="form-control" id="exampleInputadress" aria-describedby="emailHelp">
+       </div>
+   
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Phone No :</label>
+        <input type="text" name="phone" class="form-control" id="Inputphone">
+        </div>
+
+
+        <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password :</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+      </div>
+  
+        <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Confirm Password :</label>
+        <input type="password" name="confirmpassword" class="form-control" id="exampleInputPassword2">
+          </div>
+
+        {%for msg in messages%}
+        <div class="mt-3 mb-2">
+        <span class="form-control" style="background-color: #a1d1d0;padding: 20px;"><span style="color: red;">* </span>{{msg}}</span>
+        </div>   
+        {%endfor%}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</div>
+{% endblock %}
+

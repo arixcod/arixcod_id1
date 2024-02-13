@@ -1,0 +1,36 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'JS/css/style.css' %}">
+<script src="{% static 'JS/admin.js' %}"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+  <div class="login-form-style">
+        <div>
+            <h1 style="margin-top: 150px;"> Sign In .</h1>
+            <form class="login-form-data" method="POST" action="">
+                {%csrf_token%}
+                <input type="text" name="username" placeholder=" enter usename">
+                <input type="password" name="password" placeholder=" enter password" >
+                <input type="submit" value="Login" name="Login">
+            </form>
+        <div class="error-mess-login">
+            {% if messages %}   
+            <ul class="messages">
+              {% for message in messages %}
+              <li>
+              {{ message }}
+                </li>
+                  {% endfor %}
+                </ul>
+    {% endif %}
+  </div>
+          </div>
+      </div>
+  </body>
+</html>
+

@@ -1,0 +1,83 @@
+{%extends 'id_card/creators_panel.html' %}
+
+
+
+
+
+{% block doctype %}<!DOCTYPE HTML>{% endblock %}
+
+
+{% block head %}
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {%load static%}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'JS/css/style.css' %}">
+    
+    <script src="{% static 'JS/part_fire_admin.js' %}"></script>
+
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+  
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <title>Admin Dashboard Panel</title> 
+</head>
+
+
+{% endblock %}
+
+
+
+{% block body%}
+<h3 style="margin-top: 100px;">You can find All clients data Here </h3>  
+
+
+<hr>     
+    <div style="display: flex;flex-wrap: wrap; gap: 1em;">
+    <div style="background-color: chocolate;cursor: pointer; border-radius: 12px;text-align: center;" class="data-btn-wrapper">
+    <a style="text-decoration: none; color: white;" href="{% url 'edit_console' current_user_id %}">Creator Console</a>
+    </div>
+
+                           <!-- <div style="background-color: chocolate; max-width: 200px;border-radius: 12px;text-align: center;" class="data-btn-wrapper">
+                            <a style="text-decoration: none; color: white;" >Apply Filter</a>
+                          </div>
+                            <div  style="display: flex;align-items: center;justify-content: center; cursor: pointer; background-color: chocolate; max-width: 200px;border-radius: 12px;" class="create-cards-with-js-all">
+                              <a style=" color: white; ">Create Cards</a>
+                            </div> -->
+  
+  
+                            
+    <div  style="cursor: pointer; background-color: chocolate; border-radius: 12px; text-align: center;" class="data-btn-wrapper">
+    <a style=" color: white; " href="{% url 'cards_gen' current_user_id %}">View & download Cards</a>
+    </div>
+
+</div>
+
+<div class="data-wrapper">
+ {%for user_data in user_data%}      
+   <div class="container">
+    <div class="item">
+      <div class="filename">
+        <span>{{user_data.name}}</span>
+          <div class="filedata">
+            <span> ● {{user_data.gender}}</span>
+            <span> ● {{user_data.moible_no}}</span>
+            <span> ● {{user_data.adress}}</span>
+          </div>
+        <button><a >view data</a></button>
+      </div>
+    </div>
+  </div>
+
+  {%endfor%} 
+
+</div>
+{%endblock%}
